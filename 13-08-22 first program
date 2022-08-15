@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(void)
+{
+    int i,j,n,t=2;
+    char ch,mh;
+while(t>0)
+{
+    ch='A',mh='a';
+    printf("enter n value\n");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+    for(j=1;j<=i;j++)
+    {
+        printf("%c%c ",ch,mh);
+        ch++;
+        mh++;
+    }
+    printf("\n");
+    }
+t--;
+}
+}
