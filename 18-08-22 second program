@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(void)
+{
+    int arr[]={1,2,3,4,5};
+    int i,f=1,sum=0,n;
+    int len=sizeof(arr)/sizeof(int);
+    for(i=0;i<len;i++)
+    {
+        n=arr[i];
+        while(n>0)
+        {
+            f=f*n;
+            n--;
+        }
+        sum=sum+f;
+    }
+    printf("sum of factorial of given elements in array is %d",sum);
+}
