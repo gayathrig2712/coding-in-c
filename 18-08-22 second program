@@ -2,10 +2,11 @@
 int main(void)
 {
     int arr[]={1,2,3,4,5};
-    int i,f=1,sum=0,n;
+    int i,f,sum=0,n;
     int len=sizeof(arr)/sizeof(int);
     for(i=0;i<len;i++)
     {
+        f=1;
         n=arr[i];
         while(n>0)
         {
